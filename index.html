@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organizer</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+<div id="Message">
+<div class="main">
+    <button id="prev" class="Mounth btn btn-primary">Назад</button>
+    <div id="month" class="Mounth"></div>
+    <button id="next"  class="Mounth btn btn-primary">Вперед</button>
+</div>
+<div id="calendar"></div>
+<div id="bigDiv">
+</div>
+<div id="buttonMinus">
+    <div class="Button">-</div>
+
+</div>
+<div id="buttonPlus">
+    <div class="Button">+</div>
+</div>
+
+
+</div>
+<div id="formInput">
+    <div class="textmain">Создайте событие:</div>
+    <form name="myform" class="form-horizontal" autocomplete="off">
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Дата начала события:</label>
+            <div class="col-lg-5">
+                <input type="text" id="datepicker" class="form-control" name="dateStart">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Дата конца события:</label>
+            <div class="col-lg-5">
+                <input type="text" id="datepicker2"class="form-control" name="dateEnd">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Название события:</label>
+            <div class="col-lg-8">
+                <input type="text" class="form-control" name="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Описание события:</label>
+            <div class="col-lg-8">
+                <textarea class="form-control" rows="5" name="description"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+                <button type="submit" class="btn btn-primary" id="enter">OK</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div id="dialog-message" title="Attention">
+</div>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+<script src="JS/object.js"></script>
+
+
+
+</body>
+</html>

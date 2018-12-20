@@ -1,0 +1,187 @@
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+#message
+{
+    position: fixed;
+    display: none;
+    width:200px;
+    height: 100px;
+    background: rgb(237, 237, 237);
+    border-radius: 10px;
+    margin-left: 25.5%; /* Отступ слева */
+    margin-right: 30%; /* Отступ справа */
+    margin-top: 5%;
+    z-index:120;
+}
+#formInput
+{
+    position: fixed;
+    display: none;
+    width: 600px;
+    height: 430px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-left: 25.5%; /* Отступ слева */
+    margin-right: 30%; /* Отступ справа */
+    margin-top: 5%;
+    z-index:102;
+}
+
+#buttonPlus,#buttonMinus
+{
+    display: block;
+    margin-right: 3%; /* Отступ справа */
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(70, 115, 255, 0.81);
+    box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+    0 2px 0 rgba(255,255,255,.4),
+    inset 0 2px 0 rgba(0,0,0,.1);
+    margin-top: 38%;
+}
+#buttonPlus
+{
+    top: 3px;
+    float: right;
+}
+#buttonMinus
+{
+    float: left;
+}
+.Button
+{
+    top: 3px;
+    position: relative;
+    text-align: center;
+    font-size:80px;
+    color: #fffefd;
+}
+#buttonPlus:hover,#buttonMinus:hover {
+    background: #406beb;
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1);
+}
+#bigDiv
+{
+    display: block;
+    background: #545454;
+    opacity: 0.5; /* Полупрозрачность элемента */
+    position: fixed;
+    z-index: 101;
+}
+
+.textmain
+{
+    margin: auto;
+    width: 227px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    color: #406beb;
+}
+
+#calendar
+{
+    position: absolute;
+    width: 1052px;
+    /*height: 595px;*/
+    border: 1px solid;
+    border-radius: 8px;
+    margin-left: 137px;
+    margin-top: 12px;
+}
+.dayWeek
+{
+    width: 150px;
+    vertical-align: middle;
+    text-align: center;
+    height:30px;
+    background-color: rgba(69, 120, 255, 0.62);
+    color: #FFFFFF;
+    font-size:20px;
+    float:left;
+    border: 1px solid #ffffff;
+}
+.dayWeek:nth-child(7)
+{
+    border-radius: 0px 8px 0px 0px;
+}
+.dayWeek:first-child
+{
+    border-radius: 8px 0px 0px 0px;
+}
+.day, .dayA{
+    height: 111px;
+    float: left;
+    width: 150px;
+    vertical-align: middle;
+   /* text-align: center;*/
+    border: 1px solid;
+    position: relative;
+}
+.dayNumber
+{
+    border-bottom: 1px solid;
+}
+
+.DivEvent
+{
+    color: #FFFFFF;
+    background-color: #406beb;
+    line-height: normal;
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+    height: 22px;
+    cursor: pointer;
+    border: 1px solid  #FFFFFF;
+    position: absolute !important;
+    z-index: 100;
+}
+
+.MoreEvent
+{
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    height: 20px;
+    border-radius: 2px;
+    color: #FFFFFF;
+    background-color: rgba(69, 120, 255, 0.62);
+    top:88px;
+    right: 2px;
+    border-right-width: 0px;
+    width: 144px;
+    cursor: pointer;
+    position: absolute;
+}
+.hoverDayClass
+{
+    background-color: rgba(64, 112, 246, 0.22);
+}
+
+.Mounth
+{
+    display: inline-block;
+}
+#month
+{
+    margin-left: 11px;
+    margin-right: 11px;
+}
+.main
+{
+    width: 268px;
+    margin: 0 auto; /* Отступ слева и справа */
+    margin-top: 7px;
+}
+.anotherMonth
+{
+    background-color: #F5F5F5;
+    color: rgba(72, 77, 79, 0.6);
+}
